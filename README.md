@@ -13,7 +13,7 @@ Download QA datasets from this url: [SQuAD](https://rajpurkar.github.io/SQuAD-ex
 Using `preprocess.py` to transform SQuAD, NewsQA and question classification data to the form that huggingface can process.
 
 ## 3. Exploring out-of-subdomain performance of QA models
-Firstly use the question classification data to train a question classifier using huggingface script:
+Firstly use the question classification data to train a question classifier using huggingface script [`run_glue.py`](https://github.com/huggingface/transformers/blob/main/examples/pytorch/text-classification/run_glue.py):
 ```
 python run_glue.py \
   --model_name_or_path bert-base-uncased \
@@ -68,7 +68,7 @@ Second, use the functions in `export_by_subdomain.py` to export QA examples by s
 python export_by_subdomain.py
 ```
 
-Finally, you can train QA models on these subsets of the original QA datasets then evaluate QA models on the dev set using huggingface script `run_qa.py`:
+Finally, you can train QA models on these subsets of the original QA datasets then evaluate QA models on the dev set using huggingface script [`run_qa.py`](https://github.com/huggingface/transformers/blob/main/examples/pytorch/question-answering/run_qa.py):
 
 ```
 python run_qa.py \
