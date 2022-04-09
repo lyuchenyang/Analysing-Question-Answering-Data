@@ -87,7 +87,7 @@ python run_qa.py \
   --overwrite_output_dir \
 ```
 
-Using `evaluate_qa.py` (based on [SQuAD evaluation script](https://worksheets.codalab.org/rest/bundles/0x6b567e1cf2e041ec80d7098f031c5c9e/contents/blob/))to evaluate all QA systems trained on subsets of the original dataset (using text length as an example in `evaluate_qa.py`):
+Using `evaluate_qa.py` (based on [SQuAD evaluation script](https://worksheets.codalab.org/rest/bundles/0x6b567e1cf2e041ec80d7098f031c5c9e/contents/blob/)) to evaluate all QA systems trained on subsets of the original dataset (using text length as an example in `evaluate_qa.py`):
 
 ```
 python evaluate_qa.py
